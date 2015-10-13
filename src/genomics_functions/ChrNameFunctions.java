@@ -1,12 +1,12 @@
 package genomics_functions;
+
 import java.util.HashMap;
 import java.util.TreeMap;
 
-
 public class ChrNameFunctions {
 
-	public static String get_ucsc_chr_names(int chr){
-		
+	public static String get_ucsc_chr_names(int chr) {
+
 		// Set up the chromosomal hash from integer to Roman
 		TreeMap<Integer, String> chr_gb = new TreeMap<Integer, String>();
 		chr_gb.put(1, "I");
@@ -25,13 +25,13 @@ public class ChrNameFunctions {
 		chr_gb.put(14, "XIV");
 		chr_gb.put(15, "XV");
 		chr_gb.put(16, "XVI");
-		
-		return(chr_gb.get(chr));
-	
+
+		return (chr_gb.get(chr));
+
 	}
 
-	public static int roman_to_integer(String r){
-		
+	public static int roman_to_integer(String r) {
+
 		// Set up the chromosomal hash from integer to Roman
 		TreeMap<String, Integer> chr_gb = new TreeMap<String, Integer>();
 		chr_gb.put("I", 1);
@@ -50,12 +50,12 @@ public class ChrNameFunctions {
 		chr_gb.put("XIV", 14);
 		chr_gb.put("XV", 15);
 		chr_gb.put("XVI", 16);
-		
-		return(chr_gb.get(r));
+
+		return (chr_gb.get(r));
 	}
-	
-	public static HashMap<String, Integer> roman_to_integer_map(){
-		
+
+	public static HashMap<String, Integer> roman_to_integer_map() {
+
 		// Set up the chromosomal hash from integer to Roman
 		HashMap<String, Integer> chr_gb = new HashMap<String, Integer>();
 		chr_gb.put("I", 1);
@@ -74,14 +74,14 @@ public class ChrNameFunctions {
 		chr_gb.put("XIV", 14);
 		chr_gb.put("XV", 15);
 		chr_gb.put("XVI", 16);
-		
-		return(chr_gb);
+
+		return (chr_gb);
 	}
-	
-	public static HashMap<String, String> sgd_numeric_to_sgd_R55(){
-	
+
+	public static HashMap<String, String> sgd_numeric_to_sgd_R55() {
+
 		HashMap<String, String> chr = new HashMap<String, String>();
-		
+
 		chr.put("chr01", "chr01_2006_01_20");
 		chr.put("chr02", "chr02_2004_07_16");
 		chr.put("chr03", "chr03_2006_01_13");
@@ -98,9 +98,9 @@ public class ChrNameFunctions {
 		chr.put("chr14", "chr14_2006_11_10");
 		chr.put("chr15", "chr15_2006_01_06");
 		chr.put("chr16", "chr16_2004_07_23");
-		
-		return(chr);
-		
+
+		return (chr);
+
 	}
-	
+
 }
