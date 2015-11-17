@@ -25,6 +25,7 @@ public class ChrNameFunctions {
 		chr_gb.put(14, "XIV");
 		chr_gb.put(15, "XV");
 		chr_gb.put(16, "XVI");
+		chr_gb.put(17, "M");
 
 		return (chr_gb.get(chr));
 
